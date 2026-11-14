@@ -1,0 +1,17 @@
+{
+  "name": "ekos",
+  "owner": {
+    "name": "Ekos Labs",
+    "url": "https://www.ekoslabs.com"
+  },
+  "plugins": [
+    {
+      "name": "ekos-leads",
+      "source": "./",
+      "description": "Find B2B buyers with a live buying signal and run LinkedIn outreach from your own account."
+    }
+  ],
+  "metadata": {
+    "description": "Ekos Labs plugins for Claude Code: buying-signal leads and LinkedIn outreach."
+  }
+}

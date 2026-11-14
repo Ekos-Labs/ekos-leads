@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "ekos": { "type": "http", "url": "https://app.ekoslabs.com/mcp" }
+  }
+}
