@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "slug": "ekos-leads",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "accessTier": "free",
   "executionMode": "hosted",
   "source": {
@@ -9,8 +9,8 @@
     "description": "Written by Ekos Labs. Uses the Ekos MCP connection; no upstream skill files are bundled."
   },
   "dependencies": [
-    "Claude, Claude Code, ChatGPT, Grok, Codex, Cursor, OpenClaw or another MCP client with OAuth sign-in",
-    "A free Ekos account, created when the user signs in through the connection"
+    "Claude Code, Codex, Cursor, OpenClaw or another agent that can run shell commands (sign-up in the chat), or Claude, ChatGPT, Grok or another MCP client with OAuth sign-in",
+    "A free Ekos account, created in the chat with the user's work email and a 6-digit code, or by signing in through the connection"
   ],
   "qa": {
     "runs": [],
