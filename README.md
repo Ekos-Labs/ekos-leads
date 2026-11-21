@@ -1,6 +1,6 @@
 # Ekos Leads
 
-Your AI finds the people who want to buy from you right now, shows the buying signal behind each one, and runs LinkedIn outreach from your own account. First 5 leads free, no card.
+Your AI finds the people who want to buy from you right now, shows the buying signal behind each one, and runs LinkedIn outreach from your own account. All from chat. Free credits to start, no card.
 
 Works in Claude Code, Claude (claude.ai and desktop), ChatGPT, Grok, Codex, Cursor and OpenClaw.
 
@@ -19,8 +19,6 @@ https://github.com/Ekos-Labs/ekos-leads
 /plugin install ekos-leads@ekos
 ```
 
-Then type `/mcp`, pick **ekos**, choose **Authenticate**, sign in to Ekos and press **Allow**.
-
 **Clone it:**
 
 ```bash
@@ -34,9 +32,9 @@ For Codex, Cursor or another agent, copy `skills/ekos-leads` into that agent's s
 
 ## Then
 
-Ask your AI "Find me leads". It connects you to Ekos in about a minute (sign in, press Allow, nothing to paste), sets up your brief in the chat and starts your free leads.
+Ask your AI "Find me leads". It sets you up in the chat: your work email, the 6-digit code we email you, done. Then it asks for your website and who you sell to, and shows you your first leads.
 
-Step-by-step pictures for every app: [app.ekoslabs.com/app/agent](https://app.ekoslabs.com/app/agent). What the skill does and costs: [skills/ekos-leads/README.md](skills/ekos-leads/README.md).
+How agents set it up: [ekoslabs.com/agent-signup](https://www.ekoslabs.com/agent-signup). What the skill does and costs: [skills/ekos-leads/README.md](skills/ekos-leads/README.md).
 
 ## License
 

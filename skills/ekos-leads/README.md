@@ -1,17 +1,15 @@
 # Ekos Leads
 
-The skill that turns your agent into an AI GTM engineer.
+Your agent finds the people who want to buy what you sell right now, tells you why each one fits in plain words, and runs LinkedIn outreach to them from your own account. All from chat. Free credits to start, no card.
 
-Works in Claude (claude.ai and desktop), Claude Code, ChatGPT, Grok, Codex, Cursor and OpenClaw.
+Works in Claude Code, Claude (claude.ai and desktop), ChatGPT, Grok, Codex, Cursor and OpenClaw.
 
-## What it does
+## What you get
 
-1. **Breaks your ICP into segments.** One broad market becomes clear segments, each with its own buyers.
-2. **Builds your champions.** For every segment, the people who actually decide and buy.
-3. **Checks buying signals across hiring, funding, leadership changes, engagement, intent and company changes,** so you reach people at the right moment.
-4. **Finds decision-makers from many data sources.** With LinkedIn, and email and phone when found.
-5. **Checks their fit.** Every lead is checked against your brief before it reaches you.
-6. **Connects your LinkedIn for warm-up and outreach.** It warms up your account, then sends your sequence from it at safe daily limits, stops when someone replies and reports back.
+1. **People with a live buying signal.** Hiring, funding, new leaders, growth and more, checked for the people who decide and buy what you sell.
+2. **The reason, in plain words.** Every lead comes with the signal behind it and how old it is, so you know why to reach out now.
+3. **Checked for fit.** Every lead is checked against your brief before it reaches you. LinkedIn on every lead, email and phone when found.
+4. **Outreach from your own LinkedIn.** Your agent drafts the messages with you, then sends them from your account at safe daily limits, stops when someone replies and reports back.
 
 Your agent asks before anything that spends credits or sends a message.
 
@@ -24,44 +22,39 @@ Your agent asks before anything that spends credits or sends a message.
 
 ## Install the skill
 
-Install only the ekos-leads skill from Ekos-Labs/skills. You don't need the rest of the collection. For Claude Code:
+Claude Code (the plugin brings the skill and the Ekos connection):
 
-```bash
-git clone --depth 1 https://github.com/Ekos-Labs/skills.git /tmp/ekos-skills
-mkdir -p ~/.claude/skills
-cp -r /tmp/ekos-skills/skills/ekos-leads ~/.claude/skills/
+```
+/plugin marketplace add Ekos-Labs/ekos-leads
+/plugin install ekos-leads@ekos
 ```
 
-For other agents, copy just the `skills/ekos-leads` folder into that agent's skills folder. See the [install guide](https://www.ekoslabs.com/skills/install) for each agent.
+Other agents: copy the `skills/ekos-leads` folder into that agent's skills folder. See the [install guide](https://www.ekoslabs.com/skills/install) for each agent.
 
-## Setup (about a minute)
+## Setup (about a minute, in the chat)
 
-Ask your agent "Find me leads". It connects you:
+Ask your agent "Find me leads".
 
-- **Claude Code:** it offers to run `claude mcp add --transport http -s user ekos https://app.ekoslabs.com/mcp`. Then type `/mcp`, pick **ekos**, choose **Authenticate**.
-- **Claude (claude.ai or desktop):** Customize, Connectors, **Add**, **Add custom connector**, paste `https://app.ekoslabs.com/mcp`, **Connect**.
-- **ChatGPT, Grok, Grok Bot, Codex, Cursor, OpenClaw:** the agent gives you the two or three steps for your app.
+- **Claude Code, Codex, Cursor, OpenClaw:** your agent asks for your work email, you type the 6-digit code we email you, and it connects Ekos for you. Nothing to copy or paste.
+- **Claude (claude.ai or desktop), ChatGPT, Grok:** your agent gives you the two or three steps to add Ekos as a connector, then you sign in and press **Allow**.
 
-Then sign in to Ekos with your email and press **Allow**. Signing in creates your account. Your agent sets up your brief in the chat (what you sell, who buys it, where) and starts your 5 free leads. No API key, nothing to paste back.
-
-Step-by-step pictures for every app: [app.ekoslabs.com/app/agent](https://app.ekoslabs.com/app/agent).
+Then your agent asks for your website and who you sell to, starts your first leads and shows them to you. Signing up creates your account with free credits. How agents set it up: [ekoslabs.com/agent-signup](https://www.ekoslabs.com/agent-signup).
 
 ## What it costs
 
 | | |
 | --- | --- |
-| First 5 leads | Free |
-| More leads | From credits you top up (from $39). 1 credit = $1 |
-| Connecting LinkedIn | Free |
+| To start | 10 free credits, no card. Your first leads are paid from them |
+| More leads | Credits you top up when you want them (from $39). 1 credit = $1, credits never expire |
 | Monthly fee | None |
 
 ## Safety
 
 - You don't need any other API keys or data accounts. Ekos does the searching on its side.
-- Your key stays in your agent's config. The skill never asks you to paste it into chat or into a project file.
+- Your Ekos key is saved privately on your machine (`~/.config/ekos/key`) and in your agent's settings. The skill never shows it in chat or writes it into your project.
 - Nothing is spent and nothing is sent on LinkedIn without your clear yes, every time.
 - Messages go out under your name, at daily limits that keep your LinkedIn account safe.
-- The first time the skill runs in a session, your agent opens one link that counts the use anonymously (the skill version and the kind of agent, nothing about you or your project).
+- Every step the skill takes is shown in the chat. Nothing runs in the background.
 
 ## Need help?
 
